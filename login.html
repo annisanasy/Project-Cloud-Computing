@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!--<title> Login and Registration Form in HTML & CSS | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="assets/css/alex.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <input type="checkbox" id="flip">
+    <div class="cover">
+      <div class="front">
+        <img src="assets/img/logotelemedicinelatar.jpg" alt="">
+        <div class="text">
+          <span class="text-1"><br></span>
+          <span class="text-2"></span>
+        </div>
+      </div>
+      <div class="back">
+        <img class="backImg" src="assets/img/logotelemedicinelatar.jpg" alt="">
+        <div class="text">
+          <span class="text-1"><br> </span>
+          <span class="text-2"></span>
+        </div>
+      </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+          <div class="login-form">
+            <div class="title">Gawat Darurat</div>
+          <form action="booking.html">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Masukkan Username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Masukkan No. Telpon" required>
+              </div>
+          
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              
+            </div>
+        </form>
+      </div>
+        <div class="signup-form">
+          <div class="title">Registrasi</div>
+        <form action="login.html">
+            <div class="input-boxes">
+              <div class="input-box">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Masukkan Username" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="Masukkan Email" required>
+              </div>
+              <div class="input-box">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Masukkan Password" required>
+              </div>
+              <div class="button input-box">
+                <input type="submit" value="Submit">
+              </div>
+              <div class="text sign-up-text">Sudah Memiliki Akun? <label for="flip">Login Sekarang</label></div>
+            </div>
+      </form>
+    </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    function login(){
+        let uname = document.getElementById("username").value;
+        let pass = document.getElementById("telpon").value;
+  
+        if(uname == "Anita", "Annisa" && pass == "08123"){
+            alert("Anda berhasil login");
+            location.href = "index.html";
+        }else {
+            alert("Username atau password salah");
+        }
+    }
+  </script>
+
+    <script>
+    function register(){
+        let uname = document.getElementById("Masukan Nama").value;
+        let email = document.getElementById("Masukan Email").value;
+        let pass = document.getElementById("Masukan Password").value;
+
+        if(uname == "Alfian", "Agung", "Anita", "Hana" && email == "admin@gmail.com" && pass == "admin123"){
+            alert("Yeayy berhasill!");
+            location.href = "index.html";
+        }
+    }
+</script>
+
+</body>
+</html>
